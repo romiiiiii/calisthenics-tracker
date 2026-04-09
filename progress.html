@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PR & Goals | Calisthenics Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+  <div class="logo">
+    <a href="index.html" style="text-decoration:none; color:inherit;">
+      💗 Calisthenics Tracker 💗
+    </a>
+  </div>
+  <button class="burger" onclick="toggleMenu()">☰</button>
+</nav>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+  <a href="index.html">My Glow Up</a>
+  <a href="plan.html">My Routine</a>
+  <a href="progress.html">Progress & PRs</a>
+</div>
+
+  <!-- MAIN CONTENT -->
+  <div class="page-container">
+    <div class="card">
+      <h1>PR & Goals</h1>
+
+      <p style="text-align:center;">
+        Your strength journey, your little wins, and your next big milestone 💕
+      </p>
+
+      <!-- PERSONAL RECORDS -->
+      <div class="stats">
+
+        <div class="stat-card">
+          <h3 id="bestPushups">0</h3>
+          <p>Best Push-Ups</p>
+        </div>
+
+        <div class="stat-card">
+          <h3 id="bestPullups">0</h3>
+          <p>Best Pull-Ups</p>
+        </div>
+
+        <div class="stat-card">
+          <h3 id="bestDips">0</h3>
+          <p>Best Dips</p>
+        </div>
+
+      </div>
+
+      <!-- GOAL TRACKER -->
+      <div class="goal-card">
+        <h2>First Pull-Up Journey</h2>
+
+        <p id="pullupMessage">
+          Your first pull-up is loading… and every step you're taking is getting you closer 💕
+        </p>
+
+        <div class="progress-bar">
+          <div class="progress-fill" id="pullupProgressFill"></div>
+        </div>
+
+        <p id="pullupProgressText">
+          Your glow-up has officially started ✨
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

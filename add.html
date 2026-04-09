@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today’s Session | Calisthenics Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+  <div class="logo">
+    <a href="index.html" style="text-decoration:none; color:inherit;">
+      💗 Calisthenics Tracker 💗
+    </a>
+  </div>
+  <button class="burger" onclick="toggleMenu()">☰</button>
+</nav>
+
+  <div class="sidebar" id="sidebar">
+  <a href="index.html">My Glow Up</a>
+  <a href="plan.html">My Routine</a>
+  <a href="progress.html">Progress & PRs</a>
+</div>
+
+  <div class="page-container">
+    <div class="card">
+      <h1>Today’s Session</h1>
+      <p style="text-align:center;">
+        Add what you’re training today and build your session as you go ✨
+      </p>
+
+      <div class="form">
+        <input type="number" id="week" placeholder="Week number" min="1">
+
+        <select id="day">
+          <option value="">Select day</option>
+          <option value="Monday">Monday</option>
+          <option value="Tuesday">Tuesday</option>
+          <option value="Wednesday">Wednesday</option>
+          <option value="Thursday">Thursday</option>
+          <option value="Friday">Friday</option>
+          <option value="Saturday">Saturday</option>
+          <option value="Sunday">Sunday</option>
+        </select>
+
+        <input type="text" id="exercise" placeholder="Exercise name">
+        <input type="number" id="sets" placeholder="Number of sets" min="1">
+        <input type="number" id="reps" placeholder="Number of reps" min="1">
+        <textarea id="notes" placeholder="Notes, changes, or how it felt (optional)"></textarea>
+
+        <button onclick="addWorkoutToSession()">Add to Today’s Moves</button>
+        <button onclick="saveSessionToLog()">Save My Session</button>
+      </div>
+
+      <div class="session-panel">
+        <h2>Today’s Moves</h2>
+        <div id="sessionList"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

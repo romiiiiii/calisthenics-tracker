@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Routine Details | Calisthenics Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+  <div class="logo">
+    <a href="index.html" style="text-decoration:none; color:inherit;">
+      💗 Calisthenics Tracker 💗
+    </a>
+  </div>
+  <button class="burger" onclick="toggleMenu()">☰</button>
+</nav>
+
+ <div class="sidebar" id="sidebar">
+  <a href="index.html">My Glow Up</a>
+  <a href="plan.html">My Routine</a>
+  <a href="progress.html">Progress & PRs</a>
+</div>
+
+  <div class="page-container">
+    <div class="card">
+      <h1>Routine Details</h1>
+      <p style="text-align:center;">
+        Edit your weekly plan, adjust it to your energy, and make it work for you ✨
+      </p>
+
+      <div id="routineDetails"></div>
+
+      <div style="margin-top: 25px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+        <button onclick="saveEditedRoutine()">Save My Changes</button>
+        <button onclick="startRoutineAsSession()">Start This Routine</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
