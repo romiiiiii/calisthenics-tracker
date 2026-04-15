@@ -1,8 +1,8 @@
-# 💗 Calisthenics Tracker 💗
+# Calisthenics Tracker 
 
 A simple and aesthetic web app to plan workouts, track progress, and stay consistent with your calisthenics journey.
 
-## ✨ Features
+## Features
 
 - 📅 Weekly workout planner (visual dashboard)
 - 🏋️‍♀️ Start workouts by day (no confusion)
@@ -11,7 +11,7 @@ A simple and aesthetic web app to plan workouts, track progress, and stay consis
 - 🏆 Personal records (Push-ups, Pull-ups, Dips)
 - 🎯 First pull-up goal tracking
 
-## 🧠 How it works
+## How it works
 
 1. Go to **My Routine**
 2. Generate your weekly workout plan
@@ -20,13 +20,13 @@ A simple and aesthetic web app to plan workouts, track progress, and stay consis
 5. Enter your actual reps and mark exercises as done
 6. Track your progress over time
 
-## 💻 Built With
+## Built With
 
 - HTML
 - CSS (custom pastel UI)
 - JavaScript (localStorage for data)
 
-## 🎀 Why I built this
+## Why I built this
 
 I wanted a workout tracker that feels:
 - simple
@@ -36,7 +36,7 @@ I wanted a workout tracker that feels:
 
 instead of something overwhelming or boring.
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - Weekly progression tracking (Week 1, 2, 3…)
 - Smarter workout recommendations
@@ -49,8 +49,7 @@ instead of something overwhelming or boring.
 <img width="1395" height="875" alt="image" src="https://github.com/user-attachments/assets/57472494-7ec7-4d10-bcee-5f61f4907f3a" />
 
 
-
-## 🌸 Author
+## Author
 
 Romy Abourjeili
 
