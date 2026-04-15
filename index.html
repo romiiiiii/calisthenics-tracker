@@ -7,28 +7,30 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <nav class="navbar">
-  <div class="logo">
-    <a href="index.html" style="text-decoration:none; color:inherit;">
-      💗 Calisthenics Tracker 💗
-    </a>
-  </div>
-  <button class="burger" onclick="toggleMenu()">☰</button>
-</nav>
+    <div class="logo">
+      <a href="index.html">&hearts; Calisthenics Tracker &hearts;</a>
+    </div>
+    <button class="burger" type="button" aria-label="Open navigation menu" onclick="toggleMenu()">&#9776;</button>
+  </nav>
 
   <div class="sidebar" id="sidebar">
     <a href="index.html">My Glow Up</a>
+    <a href="baseline.html">Starting Point</a>
     <a href="plan.html">My Routine</a>
-    <a href="progress.html">Progress & PRs</a>
+    <a href="progress.html">Progress &amp; PRs</a>
+    <a href="achievements.html">Streaks &amp; Wins</a>
+    <a href="#" onclick="logoutUser(); return false;">Log Out</a>
   </div>
 
   <div class="page-container">
     <div class="card">
       <h1>My Glow Up</h1>
       <p style="text-align:center;">
-        See your week, stay on track, and start today’s training without getting lost ✨
+        See your week, stay on track, and start today's training without getting lost.
       </p>
+
+      <div id="profileSummary"></div>
 
       <div class="week-header">
         <h2 id="currentWeekTitle">Week 1</h2>
@@ -56,14 +58,14 @@
       <div class="goal-card">
         <h2>First Pull-Up Journey</h2>
         <p id="pullupMessage">
-          Your first pull-up is loading… and every step you're taking is getting you closer 💕
+          Your first pull-up is loading, and every step is getting you closer.
         </p>
 
         <div class="progress-bar">
           <div class="progress-fill" id="pullupProgressFill"></div>
         </div>
 
-        <p id="pullupProgressText">Your glow-up has officially started ✨</p>
+        <p id="pullupProgressText">Your glow-up has officially started.</p>
       </div>
     </div>
   </div>

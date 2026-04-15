@@ -7,27 +7,27 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <nav class="navbar">
-  <div class="logo">
-    <a href="index.html" style="text-decoration:none; color:inherit;">
-      💗 Calisthenics Tracker 💗
-    </a>
-  </div>
-  <button class="burger" onclick="toggleMenu()">☰</button>
-</nav>
+    <div class="logo">
+      <a href="index.html">&hearts; Calisthenics Tracker &hearts;</a>
+    </div>
+    <button class="burger" type="button" aria-label="Open navigation menu" onclick="toggleMenu()">&#9776;</button>
+  </nav>
 
   <div class="sidebar" id="sidebar">
-  <a href="index.html">My Glow Up</a>
-  <a href="plan.html">My Routine</a>
-  <a href="progress.html">Progress & PRs</a>
-</div>
+    <a href="index.html">My Glow Up</a>
+    <a href="baseline.html">Starting Point</a>
+    <a href="plan.html">My Routine</a>
+    <a href="progress.html">Progress &amp; PRs</a>
+    <a href="achievements.html">Streaks &amp; Wins</a>
+    <a href="#" onclick="logoutUser(); return false;">Log Out</a>
+  </div>
 
   <div class="page-container">
     <div class="card">
       <h1>My Progress Diary</h1>
       <p style="text-align:center;">
-        Look back at your sessions and see how far you’ve already come 💕
+        Look back at your sessions and see how far you've already come.
       </p>
 
       <div class="form">

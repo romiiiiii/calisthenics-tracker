@@ -11,6 +11,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 16px;
   background: rgba(255, 255, 255, 0.45);
   backdrop-filter: blur(10px);
   padding: 18px 30px;
@@ -24,15 +25,32 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: #3f3f46;
+  min-width: 0;
+  flex: 1;
+}
+
+.logo a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .burger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
   font-size: 28px;
+  line-height: 1;
   cursor: pointer;
   background: none;
   border: none;
   color: #2f5d39;
   padding: 0;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1002;
 }
 
 .sidebar {
@@ -83,6 +101,37 @@ body {
 h1, h2, h3 {
   text-align: center;
   color: #3f3f46;
+}
+
+.eyebrow {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 12px;
+  font-weight: bold;
+  color: #a85d73;
+  margin: 0 0 10px;
+}
+
+.auth-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.auth-card {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.auth-copy,
+.auth-note {
+  text-align: center;
+}
+
+.auth-note {
+  color: #666;
+  margin-top: 18px;
 }
 
 .form {
@@ -163,6 +212,37 @@ button:disabled {
   margin: 8px 0 0;
 }
 
+.profile-card {
+  margin-top: 25px;
+  background: rgba(255, 248, 251, 0.88);
+  border: 1px solid #f3c9d5;
+  border-radius: 18px;
+  padding: 22px;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.soft-link-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: #9bd6a4;
+  color: #205c2a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.soft-link-button:hover {
+  background: #88ca93;
+}
+
 .session-panel,
 .plan-output,
 .goal-card {
@@ -184,6 +264,7 @@ button:disabled {
   border-radius: 14px;
   padding: 16px;
   margin-top: 14px;
+  position: relative;
 }
 
 .delete-btn {
@@ -195,6 +276,30 @@ button:disabled {
 
 .delete-btn:hover {
   background: #ec849a;
+}
+
+.delete-btn-top {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  min-width: 34px;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  box-shadow: 0 4px 10px rgba(242, 155, 173, 0.3);
+}
+
+.entry-card-content {
+  width: 100%;
+  padding-right: 42px;
 }
 
 .empty-message {
@@ -277,12 +382,258 @@ button:disabled {
   color: #2c7a4b;
 }
 
+.status-in-progress {
+  background: rgba(255, 243, 205, 0.92);
+  color: #9a6a18;
+}
+
 .day-card button {
   width: 100%;
   margin-top: 10px;
 }
 
+.section-title {
+  margin-top: 0;
+}
+
+.section-copy {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.day-status-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.workout-day-header {
+  text-align: center;
+}
+
+.workout-exercise-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.exercise-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.exercise-target,
+.exercise-notes {
+  margin: 0;
+}
+
+.exercise-notes {
+  text-align: left;
+}
+
+.why-note {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.72);
+  color: #6d5561;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.set-inputs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.set-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.set-input-group span {
+  font-weight: bold;
+  color: #5b4b55;
+}
+
+.extra-notes-field {
+  margin-top: 4px;
+}
+
+.exercise-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.exercise-actions button {
+  min-width: 130px;
+}
+
+.routine-day-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.routine-exercises {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.routine-exercise-form {
+  margin-top: 0;
+}
+
+.routine-input-stack {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button-row {
+  margin-top: 25px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.routine-start-row {
+  margin-top: 4px;
+}
+
+.baseline-summary-card {
+  margin-top: 22px;
+}
+
+.baseline-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.achievement-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.achievement-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.achievement-pill {
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 130px;
+}
+
+.achievement-pill strong {
+  color: #8f4d63;
+}
+
+.achievement-pill span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3f3f46;
+}
+
+.achievement-pill p {
+  margin: 0;
+  color: #6d5561;
+  line-height: 1.45;
+}
+
+.story-card {
+  margin-top: 16px;
+  padding: 22px;
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0) 40%),
+    linear-gradient(145deg, rgba(255, 196, 220, 0.95), rgba(255, 234, 243, 0.98), rgba(216, 243, 220, 0.96));
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 10px 24px rgba(168, 93, 115, 0.12);
+}
+
+.story-date,
+.story-eyebrow,
+.story-streak,
+.story-total,
+.story-highlight {
+  margin: 0;
+}
+
+.story-date {
+  text-align: right;
+  font-size: 13px;
+  color: #8f6270;
+}
+
+.story-eyebrow {
+  margin-top: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 12px;
+  font-weight: bold;
+  color: #a85d73;
+}
+
+.story-card h3 {
+  text-align: left;
+  margin: 18px 0 10px;
+  font-size: 30px;
+}
+
+.story-streak {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.62);
+  color: #8f4d63;
+  font-weight: bold;
+}
+
+.story-total {
+  margin-top: 14px;
+  color: #5a5258;
+  font-weight: bold;
+}
+
+.story-highlight {
+  margin-top: 18px;
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.6);
+  color: #5f4e57;
+  line-height: 1.55;
+}
+
 @media (max-width: 768px) {
+  .navbar {
+    padding: 16px 20px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
   .stats {
     grid-template-columns: 1fr;
   }
@@ -299,6 +650,26 @@ button:disabled {
   .session-item,
   .plan-item {
     flex-direction: column;
+  }
+
+  .exercise-card-head,
+  .exercise-actions,
+  .button-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .set-inputs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .baseline-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achievement-layout,
+  .achievement-list {
+    grid-template-columns: 1fr;
   }
 
   .card {

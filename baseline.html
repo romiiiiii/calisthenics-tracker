@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Routine | Calisthenics Tracker</title>
+  <title>Starting Point | Calisthenics Tracker</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,38 +25,28 @@
 
   <div class="page-container">
     <div class="card">
-      <h1>My Routine</h1>
+      <p class="eyebrow">Personal Setup</p>
+      <h1>Starting Point</h1>
       <p style="text-align:center;">
-        Create a weekly calisthenics plan that actually matches your level and goals.
+        Hi <span id="baselineProfileName">there</span>, tell the app what you can do right now so your plan does not waste your time.
       </p>
 
-      <div id="baselineSummary"></div>
+      <div class="form" id="baselineForm">
+        <input type="number" id="baselinePushups" min="0" placeholder="Max push-ups you can do right now">
+        <input type="number" id="baselinePullups" min="0" placeholder="Max pull-ups you can do right now">
+        <input type="number" id="baselineDips" min="0" placeholder="Max dips you can do right now">
+        <input type="number" id="baselineSquats" min="0" placeholder="Max bodyweight squats you can do right now">
+        <input type="number" id="baselinePlank" min="0" placeholder="Plank hold in seconds">
 
-      <div class="form">
-        <select id="goal">
-          <option value="">Choose your goal</option>
-          <option value="strength">Build Strength</option>
-          <option value="endurance">Build Endurance</option>
-          <option value="skills">Learn Skills</option>
-        </select>
-
-        <select id="level">
-          <option value="">Choose your level</option>
-          <option value="beginner">Beginner</option>
-          <option value="intermediate">Intermediate</option>
-        </select>
-
-        <select id="daysPerWeek">
+        <select id="baselineDays">
           <option value="">Training days per week</option>
           <option value="2">2 days</option>
           <option value="3">3 days</option>
           <option value="4">4 days</option>
         </select>
 
-        <button onclick="generatePlan()">Generate My Routine</button>
+        <button onclick="saveBaseline()">Save My Starting Point</button>
       </div>
-
-      <div id="planOutput" class="plan-output"></div>
     </div>
   </div>
 

@@ -3,45 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Today’s Workout | Calisthenics Tracker</title>
+  <title>Today's Workout | Calisthenics Tracker</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- NAVBAR -->
   <nav class="navbar">
-  <div class="logo">
-    <a href="index.html" style="text-decoration:none; color:inherit;">
-      💗 Calisthenics Tracker 💗
-    </a>
-  </div>
-  <button class="burger" onclick="toggleMenu()">☰</button>
-</nav>
+    <div class="logo">
+      <a href="index.html">&hearts; Calisthenics Tracker &hearts;</a>
+    </div>
+    <button class="burger" type="button" aria-label="Open navigation menu" onclick="toggleMenu()">&#9776;</button>
+  </nav>
 
-  <!-- SIDEBAR -->
   <div class="sidebar" id="sidebar">
     <a href="index.html">My Glow Up</a>
+    <a href="baseline.html">Starting Point</a>
     <a href="plan.html">My Routine</a>
-    <a href="progress.html">Progress & PRs</a>
+    <a href="progress.html">Progress &amp; PRs</a>
+    <a href="achievements.html">Streaks &amp; Wins</a>
+    <a href="#" onclick="logoutUser(); return false;">Log Out</a>
   </div>
 
-  <!-- MAIN CONTENT -->
   <div class="page-container">
     <div class="card">
-      <h1>Today’s Workout</h1>
-
+      <h1>Today's Workout</h1>
       <p style="text-align:center;">
-        Follow your plan, adjust your reps, and log what you actually completed 💕
+        Follow your plan, adjust your reps, and log what you actually completed.
       </p>
 
-      <!-- THIS IS VERY IMPORTANT -->
-      <!-- JS WILL INJECT EXERCISES HERE -->
       <div id="dayWorkoutContainer"></div>
-
     </div>
   </div>
 
   <script src="script.js"></script>
-
 </body>
 </html>

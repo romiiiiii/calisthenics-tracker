@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Calisthenics Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-container auth-shell">
+    <div class="card auth-card">
+      <p class="eyebrow">Simple Start</p>
+      <h1>Welcome to your tracker</h1>
+      <p class="auth-copy">
+        Use your name and a 4-digit PIN. On this device, your first login creates your profile.
+      </p>
+
+      <div class="form">
+        <input type="text" id="loginName" placeholder="Your name" maxlength="30">
+        <input type="password" id="loginPin" placeholder="4-digit PIN" inputmode="numeric" pattern="[0-9]{4}" maxlength="4">
+        <button onclick="loginOrRegister()">Enter My Tracker</button>
+      </div>
+
+      <p class="auth-note">
+        This is a simple local login for your personal workout flow, not secure online accounts.
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

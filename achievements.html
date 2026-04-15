@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streaks &amp; Wins | Calisthenics Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">&hearts; Calisthenics Tracker &hearts;</a>
+    </div>
+    <button class="burger" type="button" aria-label="Open navigation menu" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+
+  <div class="sidebar" id="sidebar">
+    <a href="index.html">My Glow Up</a>
+    <a href="baseline.html">Starting Point</a>
+    <a href="plan.html">My Routine</a>
+    <a href="progress.html">Progress &amp; PRs</a>
+    <a href="achievements.html">Streaks &amp; Wins</a>
+    <a href="#" onclick="logoutUser(); return false;">Log Out</a>
+  </div>
+
+  <div class="page-container">
+    <div class="card">
+      <h1>Streaks &amp; Wins</h1>
+      <p style="text-align:center;">
+        A little motivation wall for your consistency, milestones, and story-worthy glow-up moments.
+      </p>
+
+      <div class="stats">
+        <div class="stat-card">
+          <h3 id="streakCount">0</h3>
+          <p>Current Streak</p>
+        </div>
+
+        <div class="stat-card">
+          <h3 id="longestStreak">0</h3>
+          <p>Best Streak</p>
+        </div>
+
+        <div class="stat-card">
+          <h3 id="thisWeekCount">0</h3>
+          <p>This Week</p>
+        </div>
+      </div>
+
+      <div class="goal-card">
+        <h2>Today&apos;s Little Win</h2>
+        <p id="achievementMessage">Your first logged workout is going to unlock this little achievement wall.</p>
+      </div>
+
+      <div class="achievement-layout">
+        <div class="goal-card">
+          <h2>Milestones</h2>
+          <div id="achievementList" class="achievement-list"></div>
+        </div>
+
+        <div class="goal-card">
+          <h2>Story Card</h2>
+          <div class="story-card">
+            <p class="story-date" id="storyCardDate"></p>
+            <p class="story-eyebrow">Calisthenics Check-In</p>
+            <h3 id="storyCardName">My Glow-Up</h3>
+            <p class="story-streak" id="storyCardStreak">Ready for day 1</p>
+            <p class="story-total" id="storyCardWorkouts">0 workouts logged</p>
+            <p class="story-highlight" id="storyCardHighlight">Your consistency card will show up here.</p>
+          </div>
+
+          <div class="profile-actions">
+            <button type="button" onclick="copyAchievementCaption()">Copy Story Caption</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
