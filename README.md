@@ -44,9 +44,13 @@ instead of something overwhelming or boring.
 - User accounts (login system)
 
 ## 📸 Screenshots
-<img width="1384" height="891" alt="image" src="https://github.com/user-attachments/assets/572b4dfc-5dd2-475f-b52e-37326ac6ad0a" />
-<img width="1394" height="801" alt="image" src="https://github.com/user-attachments/assets/ca5d7982-bd51-4db4-b274-81168cecb36c" />
-<img width="1395" height="875" alt="image" src="https://github.com/user-attachments/assets/57472494-7ec7-4d10-bcee-5f61f4907f3a" />
+<img width="1756" height="899" alt="Screenshot 2026-04-15 105653" src="https://github.com/user-attachments/assets/87a20a2f-7438-44fb-8455-385b428f2db0" />
+<img width="1755" height="914" alt="Screenshot 2026-04-15 105712" src="https://github.com/user-attachments/assets/c43ab06c-f9b0-459e-9a08-6d01caa0bc95" />
+<img width="1455" height="771" alt="Screenshot 2026-04-15 105837" src="https://github.com/user-attachments/assets/0fb05b2c-92b1-49f0-aa5f-e0351d1b6274" />
+<img width="1358" height="768" alt="Screenshot 2026-04-15 105856" src="https://github.com/user-attachments/assets/968653c0-b000-4c17-a8a1-7e20fb199579" />
+<img width="1360" height="802" alt="Screenshot 2026-04-15 105919" src="https://github.com/user-attachments/assets/d8c43a85-469b-4061-8ecb-0d0c88d2b4c0" />
+<img width="455" height="577" alt="Screenshot 2026-04-15 110110" src="https://github.com/user-attachments/assets/8c76938c-c8b7-4eea-b5ee-ddc77b9d764d" />
+
 
 
 ## Author
